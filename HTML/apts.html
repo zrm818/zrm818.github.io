@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+
+    <meta charset="utf-8" />
+    <title>Burbank Oaks Apartments</title>
+    <link rel="shortcut icon" type="image/png" href="../IMAGES/apt-favicon.png" />
+    <link href="../CSS/StyleSheet.css" rel="stylesheet">
+
+    <script src="../JS/main.js" type="text/javascript"> </script>
+    
+</head>
+    
+    
+<body>
+   
+    <div class="top">
+        <div class="heading">
+            <h1> Burbank Oaks Apartments</h1>
+            <h2>14314 Burbank Blvd, Sherman Oaks, CA 91401</h2>
+        </div>
+        
+        
+        <!-- REPLACE LINKS WITH BUTTON ONCLICK EVENTS VIA JAVASCRIPT -->
+        
+        <div class="navbar">
+            <div class="homelink">
+                <button onclick="location.href='../HTML/index.html'">HOME</button>
+            </div>
+            <div class="aptslink">
+                <button onclick="location.href='../HTML/apts.html'">APARTMENTS</button>
+            </div>
+            <div class="locationlink">
+                <button onclick="location.href='../HTML/location.html'">LOCATION</button>
+            </div>
+            <div class="contactlink">
+                <button onclick="location.href='../HTML/contact.html'">CONTACT US</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <hr>
+    
+    <div class="forRent">
+        <h2>Our Apartments For Rent</h2>
+
+        <!--
+        With the CSS float property and a bit more understanding, I intend to embed a series of images in one tile that can be clicked through
+        -->
+
+        <div class="aptsImgRow">
+            <div class="column">
+                <img onmouseover="setImage(this, '../IMAGES/Apt178-2C.jpg')" onmouseout="setImage(this, '../IMAGES/Apt178-1C.png')"
+                src="../IMAGES/Apt178-1C.png" alt="Apartment 1" width=100%>
+                <p>Apartment #1: Studio (425 sqft)</p>
+            </div>
+
+            <div class="column">
+                <img onmouseover="setImage(this, '../IMAGES/Apt225-2C.jpg')" onmouseout="setImage(this, '../IMAGES/Apt225-1C.jpg')"
+                src="../IMAGES/Apt225-1C.jpg" alt="Apartment 2" width=100%>
+                <p>Apartment #2: Studio (425 sqft)</p>
+            </div>
+
+            <div class="column">
+                <img onmouseover="setImage(this, '../IMAGES/Apt3-2C.jpg')" onmouseout="setImage(this, '../IMAGES/Apt3-1C.jpg')"
+                src="../IMAGES/Apt3-1C.jpg" alt="Apartment 3" width=100%>
+                <p>Apartment #3: 1 Bedroom (650 sqft)</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<footer>
+    
+    <div class="socials">
+       
+        <p>
+            <a href="https://www.facebook.com"  target=_blank><img src="../IMAGES/Icons/facebookblue.png"  alt="facebook"> </a>
+            <a href="https://www.instagram.com" target=_blank><img src="../IMAGES/Icons/instagradient.png" alt="instagram"></a>
+            <a href="https://www.twitter.com"   target=_blank><img src="../IMAGES/Icons/twitterblue.png"   alt="twitter">  </a>
+            <a href="https://www.whatsapp.com"  target=_blank><img src="../IMAGES/Icons/whatsappgreen.png" alt="whatsapp"> </a>
+        </p>
+        
+    </div>
+    
+</footer>
+    
+</html>

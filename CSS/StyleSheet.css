@@ -1,0 +1,117 @@
+/* 
+
+Implement relative font sizes for scaling
+
+recall html tags input and label
+
+outset borders?
+
+restructure image rows as grid with width percentages? grids vs flexboxes
+
+*/
+
+:root {
+    --mainbgColor: rgb(200, 220, 200);
+    --textbgColor: rgb(220, 240, 220);
+    --rentalAppButtonColor: rgb(30, 60, 30);
+}
+
+
+body { margin: 0; background-color: var(--mainbgColor); min-height: calc(100vh - 45px); display: flex; flex-direction: column; flex-grow: 1; }
+
+footer {margin-top: auto; max-height: 45px;}
+
+h1 { color: darkolivegreen; }
+
+h2 { font-family: helvetica; color: darkolivegreen; text-align: center;}
+
+hr { margin: 5px; }
+
+ul { font-size: 18px; }
+
+li { margin-left: 50px; font-size: 16px; }
+
+
+.top { margin-top: 10px; }
+
+/* HEADING */
+
+.heading { float: left; text-indent: 50px;}
+
+.heading h1 { margin: 0px; }
+.heading h2 { color: darkolivegreen; line-height: 0px; font-size: 15px; }
+
+
+/* NAVIGATION BAR */
+
+.navbar { float: right; }
+.navbar a:link, .navbar a:visited, .navbar a:hover, .navbar a:active { text-decoration: none; color: inherit; }
+
+.navbar button:hover { background-color: forestgreen; cursor: pointer;}
+
+.navbar button {background-color: darkgreen; border: none ; border-radius:10px; transition: background-color 200ms; 
+                color: white; margin-right: 10px; padding: 15px;  font-size: 18px; }
+
+/* RENTAL APPLICATION BUTTON */
+
+.rentalApp { padding: 20px; margin-left: 200px; float: right; }
+
+.rentalApp button { background-color: var(--rentalAppButtonColor); border-radius: 30px; border: none; color: white; padding: 10px 60px; font-size: 18px; }
+
+.rentalApp button:hover {background: radial-gradient(forestgreen, var(--rentalAppButtonColor)); color: black; cursor: pointer;}
+
+/* ABOUT */
+
+.about h2 { margin-bottom: 0px; }
+
+.mainText p { border-radius: 20px; margin-top: 5px; margin-bottom: 5px; margin-left: 20px; margin-right: 20px; font-size: 18px;
+              text-indent: 50px; background-color: var(--textbgColor); padding: 10px; }
+
+.mainImgRow, .aptsImgRow, .navbar, .contactrow { display: flex; justify-content: center; }
+
+.mainImgRow::after, .gMapsRow::after, .aptsImgRow::after, .contactrow::after, .top::after { content: ""; clear: both; display: table; }
+
+.mainImgRow {margin-left: 20px; margin-right: 20px; }
+.maincolumn {float: left; width: 25%; padding: 10px; }
+
+
+/* FOR RENT IMAGES */
+
+.aptsImgRow {margin-left: 20px; margin-right: 20px; }
+
+.column { float: left; width: 33%; padding: 10px;}
+
+.maincolumn p, .column p { font-size: 18px; margin-top: 5px; margin-bottom: 5px; text-align: center; }
+.maincolumn img, .column img { border: black 2px solid; }
+
+
+/* LOCATION */
+
+.gMapsRow { text-align: center;}
+.gMapsRow * { padding: 20px;}
+
+
+/* CONTACT SECTION */
+
+.contact p { font-size: 18px; text-indent: 30px;}
+
+.contact form * {margin: 6px;}
+.contact button {margin-top: 6px;}
+
+.contact label {display: inline-block; width: 25%; color: var(--rentalAppButtonColor); float: left; clear: left; text-align: right; margin-top: 10px;}
+.contact input, .contact select, .contactForm button {
+    display: inline-block; float: left; padding: 5px;
+    border: 2px solid forestgreen; border-radius: 10px; background-color: var(--textbgColor);}
+
+.contact input[type=text]:focus {border: 3px solid forestgreen; background-color: var(--textbgColor); }
+
+.contact input[type=submit] {display: block}
+
+
+/* SOCIALS */
+
+.socials {border: 0; }
+.socials a { text-decoration: none;}
+.socials p { text-align: center; }
+.socials img { margin: 10px; width: 25px; vertical-align: top; }
+.socials img:hover { width: 35px;}

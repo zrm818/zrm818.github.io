@@ -1,0 +1,16 @@
+body {background-color: rgb(230,230,230);}
+h1 {color: darkslategray;}
+h2 {color: darkslategray;}
+p { background-color: rgb(240,240,240); padding:10px; }
+ul { font-size: 18px; }
+li { margin-left: 50px; font-size: 16px; }
+
+.title h1 {margin: 0px;}
+.title h2 {color: dimgray; line-height: 0px; font-size: 16px; text-indent: 50px;}
+
+.about p {font-size: 18px; text-indent: 50px;}
+
+.aptsImgRow p {text-align: center;}
+.aptsImgRow::after { content: ""; clear: both; display: table; }
+
+.column { float: left; width: 20%; padding: 10px; }
